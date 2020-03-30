@@ -1,6 +1,6 @@
-package com.sunpeifu.study.data_structure.reflect;
+package com.sunpeifu.data_structure.reflect;
 
-import com.sunpeifu.demo.bean.VerifyAmount;
+import com.sunpeifu.data_structure.bean.VerifyAmount;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;

@@ -1,4 +1,4 @@
-package com.sunpeifu.study.data_structure.pricure;
+package com.sunpeifu.data_structure.pricure;
 
 import java.util.*;
 import java.util.concurrent.LinkedBlockingDeque;

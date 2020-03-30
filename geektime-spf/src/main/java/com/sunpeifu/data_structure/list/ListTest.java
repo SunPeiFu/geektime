@@ -1,6 +1,6 @@
-package com.sunpeifu.study.data_structure.list;
+package com.sunpeifu.data_structure.list;
 
-import com.sunpeifu.demo.bean.Product;
+import com.sunpeifu.data_structure.bean.Product;
 
 import java.util.ArrayList;
 

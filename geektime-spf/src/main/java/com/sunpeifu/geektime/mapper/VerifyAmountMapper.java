@@ -1,7 +1,7 @@
 package com.sunpeifu.geektime.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.sunpeifu.study.data_structure.bean.VerifyAmount;
+import com.sunpeifu.data_structure.bean.VerifyAmount;
 
 
 /**

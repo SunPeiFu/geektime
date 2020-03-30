@@ -1,4 +1,4 @@
-package com.sunpeifu.demo.bean;
+package com.sunpeifu.data_structure.bean;
 
 import lombok.Data;
 

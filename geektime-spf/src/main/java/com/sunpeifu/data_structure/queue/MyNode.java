@@ -1,4 +1,4 @@
-package com.sunpeifu.study.data_structure.queue;
+package com.sunpeifu.data_structure.queue;
 
 /**
  * 作者:  daike

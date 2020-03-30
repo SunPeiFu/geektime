@@ -1,6 +1,6 @@
-package com.sunpeifu.study.data_structure.map;
+package com.sunpeifu.data_structure.map;
 
-import com.sunpeifu.demo.bean.Product;
+import com.sunpeifu.data_structure.bean.Product;
 
 import java.util.HashMap;
 import java.util.Iterator;

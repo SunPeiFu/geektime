@@ -1,7 +1,7 @@
-package com.sunpeifu.study.data_structure.reflect;
+package com.sunpeifu.data_structure.reflect;
 
-import com.sunpeifu.demo.bean.Item;
-import com.sunpeifu.demo.bean.Product;
+import com.sunpeifu.data_structure.bean.Item;
+import com.sunpeifu.data_structure.bean.Product;
 
 import java.lang.reflect.Field;
 import java.math.BigDecimal;
