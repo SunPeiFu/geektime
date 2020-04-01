@@ -38,7 +38,7 @@ public class ThreadLocalController {
         // 造成这种的原因是,我们的web程序运行在tomcat上,使用的是tomcat的线程,此时我们的最大线程数设置成了1,所以一直用的一个线程处理请求,所以就会有这个问题,得到的before是null而不是666
         // 修改如下即可
     }
-    @GetMapping("testThreadLocal")
+    @GetMapping("testRigth")
     public Object right(@RequestParam("userId") Integer userId){
         // 获取之前线程中的value
         String before = Thread.currentThread().getName()+":"+ current.get();
@@ -52,9 +52,5 @@ public class ThreadLocalController {
         return map;
     }
 
-    public static void main(String[] args) {
-        String a = "123Y456";
-        int y = a.indexOf("Y");
-        System.out.println(a.substring(0,y));
-    }
+
 }

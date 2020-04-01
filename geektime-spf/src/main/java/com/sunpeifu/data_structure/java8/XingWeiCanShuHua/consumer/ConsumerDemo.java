@@ -1,5 +1,8 @@
 package com.sunpeifu.data_structure.java8.XingWeiCanShuHua.consumer;
 
+import com.sunpeifu.data_structure.bean.Product;
+
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
@@ -16,11 +19,11 @@ public class ConsumerDemo {
                 (Integer i) -> System.out.println());
 
     }
+
     //
     // 接收两个参数 ,前者list 后者为consumer 其accpet方法只接收参数 没有返回 void
     public static <T> void foreach(List<T> list, Consumer<T> c) {
-
-        list.forEach(e -> c.accept(e));
+        ArrayList<Product> list1 = new ArrayList<>();
 
 
     }

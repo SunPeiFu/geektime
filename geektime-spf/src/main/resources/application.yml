@@ -1,0 +1,43 @@
+server:
+  port: 8090
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.40.11:3306/ln12320?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false&serverTimezone=Hongkong
+    username: root
+    password: 62E73DDDA0FC
+    hikari:
+      minimum-idle: 10
+      maximum-pool-size: 25
+      auto-commit: true
+      idle-timeout: 30000
+      pool-name: ExpendHikariCP
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+    tomcat:
+      initSQL: SET NAMES utf8mb4 COLLATE utf8mb4_unicode_ci
+  freemarker:
+    template-loader-path: classpath:/templates
+    cache: false
+  mvc:
+    view:
+      prefix: .ftl
+  devtools:
+    restart:
+      enabled: true
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  #  配置文件上传
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+mybatis-plus:
+  mapper-locations: classpath*:mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
