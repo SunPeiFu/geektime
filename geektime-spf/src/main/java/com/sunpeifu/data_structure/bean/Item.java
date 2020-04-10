@@ -1,6 +1,7 @@
 package com.sunpeifu.data_structure.bean;
 
 import lombok.Data;
+import lombok.ToString;
 
 import java.math.BigDecimal;
 
@@ -10,6 +11,7 @@ import java.math.BigDecimal;
  * 描述:
  */
 @Data
+@ToString
 public class Item {
 
     private String id;

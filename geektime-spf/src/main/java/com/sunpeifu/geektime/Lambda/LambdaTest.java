@@ -1,4 +1,4 @@
-package com.sunpeifu.geektime.controller;
+package com.sunpeifu.geektime.Lambda;
 
 import com.sunpeifu.geektime.entity.Order;
 import com.sunpeifu.geektime.entity.OrderItem;
@@ -9,6 +9,7 @@ import java.util.*;
 import java.util.concurrent.atomic.DoubleAdder;
 import java.util.concurrent.atomic.LongAdder;
 import java.util.stream.Collectors;
+import java.util.stream.DoubleStream;
 import java.util.stream.LongStream;
 import java.util.stream.Stream;
 
@@ -274,6 +275,7 @@ public class LambdaTest {
         System.out.println("<======>");
         list.stream().flatMap(s -> Stream.of(s.split(""))).forEach(System.out::println);//一对多的处理，把每个字符串拆成一个个字符，输出，这点map就无法做到。
         System.out.println("<======>");
+
 
     }
 }

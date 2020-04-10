@@ -1,4 +1,4 @@
-package com.sunpeifu.data_structure.java8.XingWeiCanShuHua;
+package com.sunpeifu.data_structure.java8.XingWeiCanShuHua.predicate;
 
 import com.sunpeifu.data_structure.bean.Product;
 

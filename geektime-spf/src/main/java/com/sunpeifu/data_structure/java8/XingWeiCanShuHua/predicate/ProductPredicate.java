@@ -1,4 +1,4 @@
-package com.sunpeifu.data_structure.java8.XingWeiCanShuHua;
+package com.sunpeifu.data_structure.java8.XingWeiCanShuHua.predicate;
 
 /**
  * 作者:  sunpeifu

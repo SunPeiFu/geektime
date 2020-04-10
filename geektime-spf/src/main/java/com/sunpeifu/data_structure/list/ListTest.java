@@ -25,6 +25,7 @@ public class ListTest {
             list.add(p2);
             list.add(p3);
 
+
 //            list.forEach(e->{
 //                if (e.getProductName().equals("商品2")){
 //                    list.remove(e);
