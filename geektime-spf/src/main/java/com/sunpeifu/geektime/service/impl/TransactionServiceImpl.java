@@ -2,15 +2,16 @@ package com.sunpeifu.geektime.service.impl;
 
 import com.sunpeifu.geektime.entity.FlatAmount;
 import com.sunpeifu.geektime.mapper.FlatAmountMapper;
-import com.sunpeifu.geektime.mapper.VerifyAmountMapper;
 import com.sunpeifu.geektime.service.TransactionService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
 
 /**
  * 作者:  sunpeifu
@@ -67,8 +68,5 @@ public class TransactionServiceImpl implements TransactionService {
         int insert = mapper.insert(flatAmount);
     }
 
-    @Transactional(rollbackFor = Exception.class, propagation = Propagation.REQUIRES_NEW)
-    private void execute(){
 
-    }
 }

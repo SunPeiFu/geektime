@@ -1,13 +1,10 @@
 package com.sunpeifu.geektime.controller;
 
 import com.sunpeifu.geektime.service.TransactionService;
-import org.springframework.transaction.annotation.Propagation;
-import org.springframework.transaction.annotation.Transactional;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.annotation.Resource;
 
 /**
  * 作者:  sunpeifu
@@ -17,11 +14,11 @@ import javax.annotation.Resource;
 @RestController
 public class TxController {
 
-    @Resource
+    @Autowired
     TransactionService service;
 
     @RequestMapping("testTx")
-    @Transactional(rollbackFor = Exception.class, propagation = Propagation.REQUIRED)
+    //@Transactional(rollbackFor = Exception.class, propagation = Propagation.REQUIRED)
     public void verifyAmount(@RequestParam("type") String type) {
         if ("1".equals(type)) {
             service.methodA(type);

@@ -33,7 +33,10 @@ spring:
     multipart:
       max-file-size: 10MB
       max-request-size: 100MB
-  #  redis
+#自定义配置
+myconfiguration:
+  ip: 127.0.0.1
+  msg: this is configuration
 
 
 

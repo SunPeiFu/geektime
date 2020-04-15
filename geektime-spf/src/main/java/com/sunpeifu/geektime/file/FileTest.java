@@ -1,6 +1,7 @@
 package com.sunpeifu.geektime.file;
 
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.web.client.RestTemplate;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -14,10 +15,11 @@ import java.util.stream.Stream;
  */
 public class FileTest {
 
+    RestTemplate template;
+
     public FileTest() {
 
     }
-
     public static void main(String[] args) throws Exception {
         //readInputStream();
         //fileReader();

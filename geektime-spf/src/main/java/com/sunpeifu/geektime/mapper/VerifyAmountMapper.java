@@ -13,6 +13,7 @@ import org.apache.ibatis.annotations.Mapper;
  * @author 
  * @since 2020-03-06
  */
+@Mapper
 public interface VerifyAmountMapper extends BaseMapper<VerifyAmount> {
 
 
