@@ -30,19 +30,15 @@ public class CountAspect {
 
     @Before(value = "count()")
     public void before(JoinPoint joinPoint) {
+
         // 获取调用的url
         HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
         String requestUrl = request.getRequestURL().toString();
         // 获取请求ip
         String ip = getRemoteHost(request);
-        // 判断是否存在
-        Boolean hasKey = redisTemplate.opsForHash().hasKey(requestUrl, ip);
-        if (hasKey) {
-            // 存在value +1
-            redisTemplate.opsForHash().increment(requestUrl, ip, 1);
-        } else {
-            redisTemplate.opsForHash().increment(requestUrl, ip, 1);
-        }
+        // 这里无需判断key是否存在,如果存在,则自动进行了 步长+1, 否则为1
+        redisTemplate.opsForHash().increment(requestUrl, ip, 1);
+
     }
 
     /**
