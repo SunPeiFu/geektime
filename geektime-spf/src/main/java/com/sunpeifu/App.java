@@ -20,5 +20,7 @@ public class App {
         System.out.println(bean);
         System.out.println("tostring:"+ bean.toString());
         log.info("========== 学习项目启动完毕 ==========");
+        log.info("========== feature提交 ==========");
+
     }
 }
