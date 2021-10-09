@@ -46,6 +46,8 @@ public class JsonTest {
         ObjectMapper objectMapper = new ObjectMapper();
         String jsonStr = objectMapper.writeValueAsString(order1);
         System.out.println(jsonStr);
-
+        //
+        //
+        //
     }
 }
